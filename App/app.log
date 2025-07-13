@@ -1,7 +1,0 @@
-2025-07-11 22:35:51,078 - __main__ - INFO - Received generate request
-2025-07-11 22:35:51,078 - __main__ - INFO - Starting generation
-2025-07-11 22:36:27,110 - __main__ - INFO - Using placeholder generation function
-2025-07-11 22:36:27,131 - __main__ - INFO - Using Shap-E pipe
-2025-07-11 22:36:27,132 - __main__ - INFO - Using device cuda
-2025-07-11 23:03:00,574 - __main__ - INFO - Generation done
-2025-07-11 23:03:00,593 - __main__ - INFO - Request success
