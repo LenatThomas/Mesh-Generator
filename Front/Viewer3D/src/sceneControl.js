@@ -48,7 +48,7 @@ export class SceneControl{
         this.mesh.position.set(0 , 0 , 0);
         const box = new THREE.Box3().setFromObject(this.mesh);
         const size = box.getSize(new THREE.Vector3()).length();
-        this.mesh.scale.setScalar(2 / size)
+        this.mesh.scale.setScalar(16 / size)
         
         this.mesh.traverse(child =>{
             if (child.isMesh){
