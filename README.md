@@ -32,5 +32,10 @@ python app.py  # Runs on http://localhost:5000
 # Terminal 2: Start frontend (Vite)
 cd ../Front/Viewer3D
 npm run dev  # Runs on http://localhost:5173
-
+```
 ### Sample Input Output
+![Prompt: "A mini train"](outputs/train1.gif)
+![Prompt: "A sword with neaon lights"](outputs/sword1.gif)
+![Prompt: "A dragonfly"](outputs/dragon1.gif)
+![Prompt: "bookworm"](outputs/book1.gif)
+![Prompt: "A tower with pointy roof"](outputs/tower5.gif)
