@@ -11,6 +11,8 @@ warnings.filterwarnings("ignore")
 
 
 class ShapEPipe():
+    """Generates 3D mesh using Shap-E model
+    """
     def __init__(self):
         self._device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self._xm = load_model('transmitter', device=self._device)
@@ -19,6 +21,13 @@ class ShapEPipe():
         self._diffusion = diffusion_from_config(load_config('diffusion'))
 
     def generate(self, prompt , batch_size = 1, guidance = 15.0):
+        """generate 3D mesh from text prompt
+
+        Args:
+            prompt (str): Text query given to the model.
+            batch_size (int, optional): The number of meshes to create.
+            guidance (float, optional): How strongly the model should follow the input query.
+        """
         try :
             batch_size = batch_size
             guidance_scale = guidance
@@ -82,6 +91,13 @@ class ShapEPipe():
         return self._device
         
     def generatedummy(self, prompt , batch_size = 1 , guidance = 15.0):
+        """Dummy Function set up for testing API's
+
+        Args:
+            prompt (str): Text query given to the model.
+            batch_size (int, optional): The number of meshes to create.
+            guidance (float, optional): How strongly the model should follow the input query.
+        """
         self._run = True
         print(prompt , batch_size , guidance)
 
