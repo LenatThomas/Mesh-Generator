@@ -1,4 +1,7 @@
 import { SceneControl } from './sceneControl'
+/**
+ * Gallery Control controls the events and feeds the obj files to the scene to display
+ */
 export class GalleryControl{
     constructor() {
         this.SceneControl = new SceneControl('mainCanvas');

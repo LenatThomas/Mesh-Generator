@@ -1,6 +1,9 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import {OBJLoader} from 'three/addons/loaders/OBJLoader';
+/**
+ * Scene Control controls what the scene and its elemets
+ */
 export class SceneControl{
     constructor(canvasId){
         this.canvas = document.getElementById(canvasId);
