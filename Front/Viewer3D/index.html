@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Mesh Generator</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Mesh Generator</h1>
+        
+        <div class="controls">
+            <div class="control-group prompt-group">
+                <input type="text" id="prompt" placeholder="Enter your prompt here...">
+            </div>
+            
+            <div class="control-group settings-group">
+                <select id="modelType">
+                    <option value="ShapE">Shap-E</option>
+                    <option value="Instant3D">Instant 3D</option>
+                    <option value="DreamFusion">Dream Fusion</option>
+                    <option value="Zero123">Zero123</option>
+                    <option value="Hyungyuan">Hyungyuan</option>
+                </select>
+                
+                <div class="slider-container">
+                    <label for="batchSize">Batch Size: <span id="batchSizeValue">1</span></label>
+                    <input type="range" id="batchSize" min="1" max="10" value="1" step="1">
+                </div>
+                
+                <div class="slider-container">
+                    <label for="guidance">Guidance: <span id="guidanceValue">7.5</span></label>
+                    <input type="range" id="guidance" min="5" max="30" value="7.5" step="0.1">
+                </div>
+                
+                <button id="generateBtn">Generate</button>
+            </div>
+        </div>
+
+        <div class="canvas-wrapper">
+            <div class="canvas-container">
+                <canvas id="mainCanvas"></canvas>
+                <div class="nav-buttons">
+                    <button id="prevBtn" disabled><i class="fas fa-chevron-left"></i></button>
+                    <button id="nextBtn" disabled><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            
+            <div class="wireframe-toggle">
+                <label class="switch">
+                    <input type="checkbox" id="wireframeToggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Wireframe</span>
+            </div>
+        </div>
+
+        <div class="button-panel">
+            <div class="model-info">No mesh generated</div>
+            <button id="downloadBtn" disabled><i class="fas fa-download"></i> Download</button>
+        </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+    <script>
+        // Update slider value displays
+        document.getElementById('batchSize').addEventListener('input', function() {
+            document.getElementById('batchSizeValue').textContent = this.value;
+        });
+        
+        document.getElementById('guidance').addEventListener('input', function() {
+            document.getElementById('guidanceValue').textContent = this.value;
+        });
+    </script>
+</body>
+</html>
