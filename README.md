@@ -53,3 +53,9 @@ npm run dev  # Runs on http://localhost:5173
 ![Prompt: "A tower with pointy roof"](outputs/tower6.gif)
 ![Prompt: "A tower with pointy roof"](outputs/tower5.gif)
 ![Prompt: "A tower with pointy roof"](outputs/tower7.gif)
+
+### Interface 
+![Interface](outputs/Interface.png)
+A demo is provided in the outputs folder. 
+
+Currently, only Shap-E is implemented. Support for additional models is planned, including models capable of refining a mesh based on a text prompt.
