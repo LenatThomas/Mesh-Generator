@@ -57,5 +57,6 @@ npm run dev  # Runs on http://localhost:5173
 ### Interface 
 ![Interface](outputs/Interface.png)
 A demo is provided in the outputs folder. 
+[Watch the demo](outputs/Mesh View.mp4)
 
 Currently, only Shap-E is implemented. Support for additional models is planned, including models capable of refining a mesh based on a text prompt.
