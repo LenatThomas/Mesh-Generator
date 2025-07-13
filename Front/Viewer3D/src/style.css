@@ -261,7 +261,7 @@ input:checked + .slider:before {
 
 .button-panel button {
   padding: 12px 25px;
-  background: #534B52;
+  background: #CD8B76;
   color: white;
   border: none;
   border-radius: 5px;
@@ -274,7 +274,7 @@ input:checked + .slider:before {
 }
 
 .button-panel button:hover {
-  background: #534B52;
+  background: #CD8B76;
   transform: translateY(-2px);
 }
 

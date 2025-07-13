@@ -1,8 +1,8 @@
-2025-07-13 17:07:27,640 - __main__ - INFO - Received generate request
-2025-07-13 17:07:27,642 - __main__ - INFO - Generating with model: ShapE
-2025-07-13 17:07:27,642 - __main__ - INFO - Starting generation
-2025-07-13 17:07:27,642 - __main__ - INFO - Using placeholder generation function
-2025-07-13 17:07:48,135 - __main__ - INFO - Using Shap-E pipe
-2025-07-13 17:07:48,135 - __main__ - INFO - Using device cuda
-2025-07-13 17:07:48,135 - __main__ - INFO - Generation done
-2025-07-13 17:07:48,216 - __main__ - INFO - Request success, Generated 5 meshes
+2025-07-13 17:18:20,185 - __main__ - INFO - Received generate request
+2025-07-13 17:18:20,186 - __main__ - INFO - Generating with model: ShapE
+2025-07-13 17:18:20,186 - __main__ - INFO - Starting generation
+2025-07-13 17:18:20,187 - __main__ - INFO - Using placeholder generation function
+2025-07-13 17:18:47,993 - __main__ - INFO - Using Shap-E pipe
+2025-07-13 17:18:47,998 - __main__ - INFO - Using device cuda
+2025-07-13 17:18:47,999 - __main__ - INFO - Generation done
+2025-07-13 17:18:48,080 - __main__ - INFO - Request success, Generated 8 meshes
