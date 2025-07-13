@@ -12,7 +12,7 @@ export class SceneControl{
         this.material = new THREE.MeshStandardMaterial({wireframe : this.wireframe});
 
         this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color(0xb6b6b6)
+        this.scene.background = new THREE.Color(0xF7F3E3)
         this.camera = new THREE.PerspectiveCamera(75, this.canvas.clientWidth / this.canvas.clientHeight, 0.1, 1000);
         this.camera.position.z = 30;
         this.renderer = new THREE.WebGLRenderer({canvas: this.canvas, antialias:true});

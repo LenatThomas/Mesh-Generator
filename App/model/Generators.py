@@ -5,7 +5,7 @@ from shap_e.diffusion.sample import sample_latents
 from shap_e.diffusion.gaussian_diffusion import diffusion_from_config
 from shap_e.models.download import load_model, load_config
 from shap_e.util.notebooks import decode_latent_mesh
-from shap_e.util.image_util import load_image
+#from shap_e.util.image_util import load_image
 warnings.filterwarnings("ignore")
 
 
@@ -15,7 +15,7 @@ class ShapEPipe():
         self._device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self._xm = load_model('transmitter', device=self._device)
         self._model = load_model('text300M', device=self._device)
-        self._imageModel = load_model('image300', device = self._device)
+        #self._imageModel = load_model('image300M', device = self._device)
         self._diffusion = diffusion_from_config(load_config('diffusion'))
 
     def generate(self, prompt , batch_size = 1, guidance = 15.0):
@@ -47,7 +47,7 @@ class ShapEPipe():
         
         except Exception as e:
             return False
-
+    """
     def generateFromImage(self, image ,batch_size = 1 , guidance = 3.0):
         image = load_image("example_data/corgi.png")
         latents = sample_latents(
@@ -71,10 +71,8 @@ class ShapEPipe():
             with open(f'./static/outputs/generated_{i}.obj', 'w') as f:
                 t.write_obj(f)
         return True
+    """
                 
-    def generateFromImage():
-        pass
-        
     @property
     def name(self):
         return 'Shap-E'
