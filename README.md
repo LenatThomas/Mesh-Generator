@@ -19,7 +19,7 @@ git clone https://github.com/LenatThomas/Mesh-Generator.git
 cd Mesh-Generator
 
 # Backend setup (Flask)
-pip install -r App/requirements.txt
+pip install -r requirements.txt
 
 # Frontend setup (Vite + Three.js)
 cd Front/Viewer3D
